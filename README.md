@@ -9,7 +9,7 @@ It is highly recommended to create several virtual monitors that will increase y
 
 Then, install any programm that will allow you to set wide and large wallpapers. For me it is [Lively](https://github.com/rocksdanister/lively).
 
-### You can place your monitors something like this:
+### You can place your monitors something like this: (your first monitor MUST be in the top left corner)
 
 <img src="https://github.com/DangeL187/AdvancedDesktop/blob/main/img/Mirage.png" width="100%">
 
@@ -19,8 +19,7 @@ Then, install any programm that will allow you to set wide and large wallpapers.
 
 ## Usage:
 
-<b> Before launching the Advanced Desktop, make sure that you have set up your virtual monitors and wallpapers! </b>
-
-<b> Run the programm. Use the middle mouse button to control the position of the windows. </b>
-
+### <b> Edit the file [setting.txt](https://github.com/DangeL187/AdvancedDesktop/blob/main/bin/settings.txt) according to your parameters! <b>
+### <b> Before launching the Advanced Desktop, make sure that you have set up your virtual monitors and wallpapers! </b>
+### <b> Run the programm. Use the middle mouse button to control the position of the windows. </b>
 ### Enjoy!
