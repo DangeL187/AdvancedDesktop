@@ -1,9 +1,12 @@
-#include "WindowManager.hpp"
+#include <iostream>
+#include "AdvancedDesktop.hpp"
 
 int main() {
-    WindowManager window_manager;
-
-    while (true) {
-        window_manager.moveWindows();
+    try {
+        AdvancedDesktop advanced_desktop;
+        advanced_desktop.run();
+    } catch (std::exception& e) {
+        std::cerr << e.what() << std::endl;
     }
+    return 0;
 }

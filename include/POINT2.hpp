@@ -2,7 +2,7 @@
 
 struct POINT2 {
 public:
-    int x, y;
+    LONG x, y;
 
     explicit POINT2(LONG x_ = 0, LONG y_ = 0) {
         x = x_;

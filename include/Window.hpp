@@ -1,3 +1,4 @@
+#include <iostream>
 #include <Windows.h>
 #include "POINT2.hpp"
 
@@ -10,10 +11,10 @@ public:
     HWND getWindowHandler() {
         return window_handler;
     }
-    void moveWindow(POINT2 current_mouse_pos, bool is_first_click) {
+    void moveWindow(const POINT2& current_mouse_position, const bool& is_first_click) {
         updateValues();
-        if (is_first_click) delta = current_mouse_pos - position;
-        position = current_mouse_pos - delta;
+        if (is_first_click) delta = current_mouse_position + position; //INVERT: delta = current_mouse_pos - position;
+        position = POINT2(0, 0)-(current_mouse_position - delta); //INVERT: position = current_mouse_pos - delta;
         MoveWindow(window_handler, position.x, position.y, width, height, TRUE);
     }
 private:
