@@ -1,0 +1,8 @@
+Main Screen Size  = 1920x1080  # The width and height of your main screen
+Total Screen Size = 5760x2160  # The width and height of all your screens in total 
+Trigger Button	  = 0x04       # By default it is Middle Mouse Button, it's code is 0x04
+
+# Button codes can be found on:
+# https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+
+# I highly recommend that you use the Mouse4 or Mouse5 buttons if you have them
