@@ -1,8 +1,30 @@
+/*! @class AdvancedDesktop
+    @brief Main application class
+*/
+
+/*! @fn AdvancedDesktop::AdvancedDesktop()
+    @brief Loads settings, initializes WindowManager object.
+    @det Throws an exception if the settings could not be loaded.
+*/
+
+/*! @fn void AdvancedDesktop::run()
+    @brief The main method used to run an endless update cycle.
+    @det Updates mouse position and calls WindowManager::update using mouse position as an argument.
+*/
+
+/*! @fn void AdvancedDesktop::loadSettings()
+    @brief Loads settings from settings.txt in ~/bin folder
+    @det The file <b> settings.txt </b> allows you to adjust:
+    @det <b> Width </b> and <b> height </b> of your main screen
+    @det <b> Width </b> and <b> height </b> of all your screens in total
+    @det <b> The button </b> used to move windows
+*/
+
 #include <algorithm>
 #include <fstream>
 #include <memory>
 #include "WindowManager.hpp"
-#include "split.h"
+#include "split.hpp"
 
 class AdvancedDesktop {
 public:

@@ -1,9 +1,49 @@
+/*! @class WindowManager
+    @brief Manages, stores, and updates all window objects
+*/
+
+/*! @fn WindowManager::WindowManager(int main_screen_width, int main_screen_height, int total_screen_width, int total_screen_height, unsigned int button_trigger_id)
+    @brief Create WindowManager object
+    @param main_screen_width
+    @param main_screen_height
+    @param total_screen_width
+    @param total_screen_height
+    @param button_trigger_id
+*/
+
+/*! @fn void WindowManager::update(const POINT2& current_mouse_position)
+    @brief Updates the position of all windows, depending on the current mouse position
+    @det If trigger button is pressed then sets new virtual screen position using WindowManager::setNewVirtualPosition;
+    @det Then moves all the windows using WindowManager::moveWindows;
+    @det If trigger button is not pressed clears a list of active windows.
+*/
+
+/*! @fn bool WindowManager::contains(const HWND& hwnd)
+    @brief Check whether the WindowManager contains a Window object
+    @param hwnd Const reference to the HWND object used for the definition is a window in the list of windows
+    @return <b> true </b> or <b> false </b>
+*/
+
+/*! @fn static BOOL CALLBACK WindowManager::EnumWindowsProc(HWND hwnd, LPARAM lParam)
+    @brief Recursively updates the list of Window objects
+*/
+
+/*! @fn void WindowManager::moveWindows(const POINT2& current_mouse_position)
+    @brief Calls "Window::moveWindow" for each Window object in the Window list
+    @param current_mouse_position Const reference to the current mouse position
+*/
+
+/*! @fn void WindowManager::setNewVirtualPosition(const POINT2& current_mouse_position)
+    @brief Updates the position of the virtual screen, but in such a way as not to go beyond it
+*/
+
 #include <algorithm>
 #include <vector>
 #include <Windows.h>
 #include "Window.hpp"
 
-/// @brief
+//If it was the first time user clicked the trigger button then delta is calculated showing the distance from the initial click point to the window position
+
 class WindowManager {
 public:
     WindowManager(int main_screen_width,

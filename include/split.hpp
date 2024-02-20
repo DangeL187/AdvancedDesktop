@@ -1,3 +1,10 @@
+/*! @fn std::vector<std::string> split(std::string line, char sym)
+    @brief An analog of the split function from python
+    @param line Line to split
+    @param sym Separator
+    @return std::vector<std::string> object
+*/
+
 #include <vector>
 #include <string>
 

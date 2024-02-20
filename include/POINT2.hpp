@@ -1,18 +1,16 @@
-/*! @file POINT2.hpp */
-
-/*! @structure POINT2
+/*! @struct POINT2
     @brief Extended version of Windows.h POINT structure
 */
 
-/*! @fn POINT2(LONG x_ = 0, LONG y_ = 0)
+/*! @fn POINT2::POINT2(LONG x_ = 0, LONG y_ = 0)
     @brief Create a POINT2 object, specifying the coordinates
     @param x_ first value
     @param y_ second value
 */
 
-/*! @fn POINT2(POINT point)
+/*! @fn POINT2::POINT2(POINT point)
     @brief Create a POINT2 object using POINT object
-    @param point
+    @param point Windows.h POINT object
 */
 
 #include <Windows.h>
