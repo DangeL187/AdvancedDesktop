@@ -19,6 +19,9 @@
 |||
 |-|-|
 | bool | <p> [WindowManager::contains](./Class_WindowManager.md#bool_WindowManager::contains(const_HWND&_hwnd)) (const HWND& hwnd) </p> <p> Check whether the WindowManager contains a Window object </p> <img width=1920/> |
+| static BOOL CALLBACK | <p> [WindowManager::EnumWindowsProc](./Class_WindowManager.md#static_BOOL_CALLBACK_WindowManager::EnumWindowsProc(HWND_hwnd,_LPARAM_lParam)) (HWND hwnd, LPARAM lParam) </p> <p> Recursively updates the list of Window objects </p> <img width=1920/> |
+| void | <p> [WindowManager::moveWindows](./Class_WindowManager.md#void_WindowManager::moveWindows(const_POINT2&_current_mouse_position)) (const POINT2& current_mouse_position) </p> <p> Calls "Window::moveWindow" for each Window object in the Window list </p> <img width=1920/> |
+| void | <p> [WindowManager::setNewVirtualPosition](./Class_WindowManager.md#void_WindowManager::setNewVirtualPosition(const_POINT2&_current_mouse_position)) (const POINT2& current_mouse_position) </p> <p> Updates the position of the virtual screen, but in such a way as not to go beyond it </p> <img width=1920/> |
 
 
 ---
@@ -40,14 +43,20 @@
 
 | <p id="bool_WindowManager::contains(const_HWND&_hwnd)"><p align="left"> `bool WindowManager::contains(const HWND& hwnd)` |
 |-|
-| <p> <p> Check whether the WindowManager contains a Window object </p><p> <b> Parameters: </b> </p> <ul> <li> <b> hwnd </b> Const reference to the HWND object used for the definition is a window in the list of windows </li> </ul><p> <b> Returns: </b> </p> <ul> <li> <b> true </b> or <b> false </b> </li> </ul> </p> <img width=1920/> | 
+| <p> <p> Check whether the WindowManager contains a Window object </p><p> <b> Parameters: </b> </p> <ul> <li> <b> hwnd </b> Const reference to the HWND object used for the definition is a window in the list of windows </li> </ul><p> <b> Returns: </b> </p> <ul> <li> \<b> true \</b> or \<b> false \</b> </li> </ul> </p> <img width=1920/> | 
 
-
-## Public Member Data Documentation
-
-| <p id="WindowManager::CALLBACK"><p align="left"> `WindowManager::CALLBACK` |
+| <p id="static_BOOL_CALLBACK_WindowManager::EnumWindowsProc(HWND_hwnd,_LPARAM_lParam)"><p align="left"> `static BOOL CALLBACK WindowManager::EnumWindowsProc(HWND hwnd, LPARAM lParam)` |
 |-|
-| <p> <p> - </p> </p> <img width=1920/> | 
+| <p> <p> Recursively updates the list of Window objects </p> </p> <img width=1920/> | 
+
+| <p id="void_WindowManager::moveWindows(const_POINT2&_current_mouse_position)"><p align="left"> `void WindowManager::moveWindows(const POINT2& current_mouse_position)` |
+|-|
+| <p> <p> Calls "Window::moveWindow" for each Window object in the Window list </p><p> <b> Parameters: </b> </p> <ul> <li> <b> current_mouse_position </b> Const reference to the current mouse position </li> </ul> </p> <img width=1920/> | 
+
+| <p id="void_WindowManager::setNewVirtualPosition(const_POINT2&_current_mouse_position)"><p align="left"> `void WindowManager::setNewVirtualPosition(const POINT2& current_mouse_position)` |
+|-|
+| <p> <p> Updates the position of the virtual screen, but in such a way as not to go beyond it </p> </p> <img width=1920/> | 
+
 
 ## Private Member Data Documentation
 
