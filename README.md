@@ -1,7 +1,7 @@
 # AdvancedDesktop
 AdvancedDesktop allows you to move your Windows applications by holding down a special button, creating the impression of working in virtual reality.
 
-## Check out the [documentation]() for additional information (soon)
+## Check out the [documentation](https://github.com/DangeL187/AdvancedDesktop/blob/main/docs/Documentation.md) for additional information (soon)
 
 ## For the best experience:
 
